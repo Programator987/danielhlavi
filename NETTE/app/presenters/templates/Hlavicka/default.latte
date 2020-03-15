@@ -1,0 +1,37 @@
+{* Latte template *}
+
+{block content}
+{$zadek}
+{$loupec}<jbr>
+{foreach $users as $item}
+    {$item}<br>
+{/foreach}<br>
+
+{foreach $users as $item}
+    {$item}{sep}.{/sep}
+{/foreach}<br>
+
+{foreach $users as $item}
+    {$iterator->getCounter()}.{$item}
+{/foreach}
+
+<table witdth="200" border="1">
+       {for $i=1; $i < $zadek+1; $i++}
+           <tr>
+               {for $h=1; $h < $loupec+1; $h++}
+                   <td>{$i}-{$h}</td>
+               
+               {/for}
+       </tr>
+       {/for}
+</table> 
+<br> 
+
+<table witdth="200" border="1"> 
+    {foreach $users as $key => $item}
+        <tr>
+            <td>{$key}</td>
+            <td>{$item}</td>
+            </tr>
+        
+    {/foreach}
