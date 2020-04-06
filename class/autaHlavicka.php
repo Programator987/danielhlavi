@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @author Daniel Hlavička
+ */
 //abstraktní třída která implementuje interface a nedá se instancovat
 abstract class autaHlavicka implements iautaHlavicka {
 

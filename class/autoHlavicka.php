@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @author Daniel Hlavička
+ */
+declare(strict_types=1);
+
 // třída která dědí z předchozí třídy
 class autoHlavicka extends autaHlavicka {
 
